@@ -15,6 +15,9 @@ The task is to train a supervized binary classification model to predict mortali
 ### Dataset Links:
 <a href= https://researchers.wls.wisc.edu/data/survey-data/>WLS Dataset</a>
 
+### Presentation Link:
+https://youtu.be/hyYlyaeNeHE
+
 #### List of features I will be using:
 1. Body mass index: HRS: HC139 - weight in pounds (continuous)
 2. Hypertension: HRS: HC005 (binary)
