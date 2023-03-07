@@ -1,21 +1,21 @@
-Predicting Long-Term Mortality: Evidence from Wisconsin Longitudinal Study
+## Predicting Long-Term Mortality: Evidence from Wisconsin Longitudinal Study
 
-Background:
+### Background:
 The current academic literature in predicting mortality has extensively focused on disease and frailty, although social, behavioral, and psychological statuses may herald broad physiological decline. I tested the effectiveness of the machine learning algorithms on the NSHAP sample in Project 1 and learnt the important features predicting mortality. This project will extend the analysis by 1) using a different set of predictors 2) applying some new algorithms in addition to tree-based algorithm 3) using a different dataset.
 
-Context:
+### Context:
 Wisconsin Longitudinal Study (WLS) is a prospective cohort study of graduates of Wisconsin high schools. I use 2004 characteristics as baseline and 2020 disposition status as target.
 
-Goal:
+### Goal:
 The goal of this project is to train a binary classifier to predict the mortality of US Adults in modern nationally representative aging surveys. I will also discuss the social and demographic characteristics of the cases whose disposition statuses were either wrongly predicted as death or alive by the algorithms. The findings will serve important purposes for public health practitioners in understanding the risk and protective factors of mortality in the aging process.
 
-Task:
+### Task:
 The task is to train a supervized binary classification model to predict mortality in the next 16 years using the baseline characteristics in 2004.
 
-Dataset Links:
+### Dataset Links:
 <a href= https://researchers.wls.wisc.edu/data/survey-data/>WLS Dataset</a>
 
-List of features I will be using:
+#### List of features I will be using:
 1. Body mass index: HRS: HC139 - weight in pounds (continuous)
 2. Hypertension: HRS: HC005 (binary)
 3. Diabetes: HRS: HC010 (binary)
@@ -37,7 +37,7 @@ List of features I will be using:
 19. Friends: HRS: HF176 (ordinal)
 20. Functional limitations: HRS: HG001 (binary)
 
-As a result,
+### Conclusion
 
 I have used the WLS dataset to predict mortality in the next 16 years using the baseline characteristics in 2004. I further explored the topic of class inbalance problem originated from project 1, and tried several new models. Different from upsampling and down sampling method tried in p1, I hereby aimed to improve the class inbalance performance by conducting better features. I explored MinMax scalling normalization and polynomial feature expansion. Different from tree models and ensemble method explored in p1, I hereby mainly explored linear models: logistic regression, SVM and fuzzy svm. To better understand the performance, I have also discussed the social and demographic characteristics of the false cases, and made some attempt to explain why models made these mistake.
 
